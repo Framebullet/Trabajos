@@ -1,0 +1,61 @@
+using System;
+
+class ProgramaIf
+{
+    static void Main(string[] args)
+    {
+        // Solicitar al usuario que ingrese un número
+        Console.WriteLine("Ingrese un número entero:");
+        int numero = Convert.ToInt32(Console.ReadLine());
+
+        // Condicional if
+        if (numero > 0)
+        {
+            Console.WriteLine("El número es positivo.");
+        }
+        else if (numero < 0)
+        {
+            Console.WriteLine("El número es negativo.");
+        }
+        else
+        {
+            Console.WriteLine("El número es cero.");
+        }
+
+        // Condicional if para verificar si un número es par o impar
+        if (numero % 2 == 0)
+        {
+            Console.WriteLine("El número es par.");
+        }
+        else
+        {
+            Console.WriteLine("El número es impar.");
+        }
+
+        // Usando un if con una condición booleana
+        bool esMayorDeEdad = false;
+
+        Console.WriteLine("Ingrese su edad:");
+        int edad = Convert.ToInt32(Console.ReadLine());
+
+        if (edad >= 18)
+        {
+            esMayorDeEdad = true;
+            Console.WriteLine("Eres mayor de edad.");
+        }
+        else
+        {
+            Console.WriteLine("Eres menor de edad.");
+        }
+
+        // Condicional usando la variable booleana
+        if (esMayorDeEdad)
+        {
+            Console.WriteLine("Tienes acceso permitido.");
+        }
+        else
+        {
+            Console.WriteLine("Acceso denegado.");
+        }
+    }
+}
