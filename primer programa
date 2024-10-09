@@ -4,61 +4,55 @@ class Operadores
 {
     static void Main(string[] args)
     {
-        // Operadores aritméticos
         int a = 10;
         int b = 3;
         Console.WriteLine("Operadores Aritméticos:");
-        Console.WriteLine("Suma: " + (a + b));   // 13
-        Console.WriteLine("Resta: " + (a - b));  // 7
-        Console.WriteLine("Multiplicación: " + (a * b));  // 30
-        Console.WriteLine("División: " + (a / b));  // 3
-        Console.WriteLine("Módulo: " + (a % b));  // 1
+        Console.WriteLine("Suma: " + (a + b));
+        Console.WriteLine("Resta: " + (a - b));
+        Console.WriteLine("Multiplicación: " + (a * b));
+        Console.WriteLine("División: " + (a / b));
+        Console.WriteLine("Módulo: " + (a % b));
 
-        // Operadores de comparación
         Console.WriteLine("\nOperadores de Comparación:");
-        Console.WriteLine("a == b: " + (a == b));  // False
-        Console.WriteLine("a != b: " + (a != b));  // True
-        Console.WriteLine("a > b: " + (a > b));  // True
-        Console.WriteLine("a < b: " + (a < b));  // False
-        Console.WriteLine("a >= b: " + (a >= b));  // True
-        Console.WriteLine("a <= b: " + (a <= b));  // False
+        Console.WriteLine("a == b: " + (a == b));
+        Console.WriteLine("a != b: " + (a != b));
+        Console.WriteLine("a > b: " + (a > b));
+        Console.WriteLine("a < b: " + (a < b));
+        Console.WriteLine("a >= b: " + (a >= b));
+        Console.WriteLine("a <= b: " + (a <= b));
 
-        // Operadores lógicos
         bool x = true;
         bool y = false;
         Console.WriteLine("\nOperadores Lógicos:");
-        Console.WriteLine("x && y: " + (x && y));  // False
-        Console.WriteLine("x || y: " + (x || y));  // True
-        Console.WriteLine("!x: " + (!x));  // False
+        Console.WriteLine("x && y: " + (x && y));
+        Console.WriteLine("x || y: " + (x || y));
+        Console.WriteLine("!x: " + (!x));
 
-        // Operadores de asignación
         Console.WriteLine("\nOperadores de Asignación:");
         int c = 5;
-        Console.WriteLine("Asignación simple: c = " + c);  // 5
+        Console.WriteLine("Asignación simple: c = " + c);
         c += 3;
-        Console.WriteLine("Suma y asignación (c += 3): " + c);  // 8
+        Console.WriteLine("Suma y asignación (c += 3): " + c);
         c -= 2;
-        Console.WriteLine("Resta y asignación (c -= 2): " + c);  // 6
+        Console.WriteLine("Resta y asignación (c -= 2): " + c);
         c *= 2;
-        Console.WriteLine("Multiplicación y asignación (c *= 2): " + c);  // 12
+        Console.WriteLine("Multiplicación y asignación (c *= 2): " + c);
         c /= 3;
-        Console.WriteLine("División y asignación (c /= 3): " + c);  // 4
+        Console.WriteLine("División y asignación (c /= 3): " + c);
         c %= 3;
-        Console.WriteLine("Módulo y asignación (c %= 3): " + c);  // 1
+        Console.WriteLine("Módulo y asignación (c %= 3): " + c);
 
-        // Operadores de incremento y decremento
         Console.WriteLine("\nOperadores de Incremento y Decremento:");
         int d = 5;
-        Console.WriteLine("Valor original de d: " + d);  // 5
-        Console.WriteLine("Incremento (d++): " + (d++));  // 5 (d ahora es 6)
-        Console.WriteLine("Nuevo valor de d: " + d);  // 6
-        Console.WriteLine("Decremento (d--): " + (d--));  // 6 (d ahora es 5)
-        Console.WriteLine("Nuevo valor de d: " + d);  // 5
+        Console.WriteLine("Valor original de d: " + d);
+        Console.WriteLine("Incremento (d++): " + (d++));
+        Console.WriteLine("Nuevo valor de d: " + d);
+        Console.WriteLine("Decremento (d--): " + (d--));
+        Console.WriteLine("Nuevo valor de d: " + d);
 
-        // Operador ternario
         Console.WriteLine("\nOperador Ternario:");
         int edad = 20;
         string resultado = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
-        Console.WriteLine("¿Es mayor de edad?: " + resultado);  // Mayor de edad
+        Console.WriteLine("¿Es mayor de edad?: " + resultado);
     }
 }
