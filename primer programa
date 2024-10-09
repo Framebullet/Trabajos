@@ -1,0 +1,64 @@
+using System;
+
+class Operadores
+{
+    static void Main(string[] args)
+    {
+        // Operadores aritméticos
+        int a = 10;
+        int b = 3;
+        Console.WriteLine("Operadores Aritméticos:");
+        Console.WriteLine("Suma: " + (a + b));   // 13
+        Console.WriteLine("Resta: " + (a - b));  // 7
+        Console.WriteLine("Multiplicación: " + (a * b));  // 30
+        Console.WriteLine("División: " + (a / b));  // 3
+        Console.WriteLine("Módulo: " + (a % b));  // 1
+
+        // Operadores de comparación
+        Console.WriteLine("\nOperadores de Comparación:");
+        Console.WriteLine("a == b: " + (a == b));  // False
+        Console.WriteLine("a != b: " + (a != b));  // True
+        Console.WriteLine("a > b: " + (a > b));  // True
+        Console.WriteLine("a < b: " + (a < b));  // False
+        Console.WriteLine("a >= b: " + (a >= b));  // True
+        Console.WriteLine("a <= b: " + (a <= b));  // False
+
+        // Operadores lógicos
+        bool x = true;
+        bool y = false;
+        Console.WriteLine("\nOperadores Lógicos:");
+        Console.WriteLine("x && y: " + (x && y));  // False
+        Console.WriteLine("x || y: " + (x || y));  // True
+        Console.WriteLine("!x: " + (!x));  // False
+
+        // Operadores de asignación
+        Console.WriteLine("\nOperadores de Asignación:");
+        int c = 5;
+        Console.WriteLine("Asignación simple: c = " + c);  // 5
+        c += 3;
+        Console.WriteLine("Suma y asignación (c += 3): " + c);  // 8
+        c -= 2;
+        Console.WriteLine("Resta y asignación (c -= 2): " + c);  // 6
+        c *= 2;
+        Console.WriteLine("Multiplicación y asignación (c *= 2): " + c);  // 12
+        c /= 3;
+        Console.WriteLine("División y asignación (c /= 3): " + c);  // 4
+        c %= 3;
+        Console.WriteLine("Módulo y asignación (c %= 3): " + c);  // 1
+
+        // Operadores de incremento y decremento
+        Console.WriteLine("\nOperadores de Incremento y Decremento:");
+        int d = 5;
+        Console.WriteLine("Valor original de d: " + d);  // 5
+        Console.WriteLine("Incremento (d++): " + (d++));  // 5 (d ahora es 6)
+        Console.WriteLine("Nuevo valor de d: " + d);  // 6
+        Console.WriteLine("Decremento (d--): " + (d--));  // 6 (d ahora es 5)
+        Console.WriteLine("Nuevo valor de d: " + d);  // 5
+
+        // Operador ternario
+        Console.WriteLine("\nOperador Ternario:");
+        int edad = 20;
+        string resultado = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
+        Console.WriteLine("¿Es mayor de edad?: " + resultado);  // Mayor de edad
+    }
+}
